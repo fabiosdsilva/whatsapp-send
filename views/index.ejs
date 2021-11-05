@@ -1,0 +1,23 @@
+<%- include ('partials/head') %>
+<body>
+    <%- include ('partials/nav') %>
+    <section>
+        <div class="container">
+            <h1 class="display-4 text-center" style="margin-top: 5vh; margin-bottom: 5vh">Adicione um número</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="5500000000" aria-label="Recipient's username" aria-describedby="button-addon2" id="input" name="input">
+                <a onclick="submit()" class="btn btn-success" id="button-addon2" role="button">Enviar</a>
+              </div>
+              <div  id="alert" class="alert alert-danger" role="alert" style="display: none;">
+              </div>
+
+              <div id="msg_send" class="alert alert-success" role="alert" style="display: none;">
+                <h4 class="alert-heading">Mensagem enviada!</h4>
+                <p>Parabéns! A mensgem foi enviada</p>
+                <hr>
+                <p class="mb-0" id="innernumber"> <b></b> </p>
+            </div>
+        </div>
+    </section>
+</body>
+<%- include ('partials/footer') %>
