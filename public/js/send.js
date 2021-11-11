@@ -12,7 +12,7 @@ function submit(){
         document.getElementById('msg_send').style.display = "";
         document.getElementById('innernumber').innerHTML = "<b>Número:</b>"+" "+counter+" "+ddd+" "+area+" "+ phone;
 
-        document.getElementById('button-addon2').setAttribute("href", link)
+        document.getElementById('WppApiLink').setAttribute("href", link)
 
         document.getElementById('input').value = "";
 
@@ -30,4 +30,9 @@ function submit(){
         document.getElementById('alert').className = "alert alert-danger";
         document.getElementById('msg_send').style.display = "none";
     }
-}   
+}
+
+function clean(){
+    var inputNumber = document.getElementById('input').value
+    console.log(inputNumber);
+}
