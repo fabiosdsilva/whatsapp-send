@@ -31,8 +31,3 @@ function submit(){
         document.getElementById('msg_send').style.display = "none";
     }
 }
-
-function clean(){
-    var inputNumber = document.getElementById('input').value
-    console.log(inputNumber);
-}
