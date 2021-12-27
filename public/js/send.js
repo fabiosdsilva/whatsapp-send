@@ -1,3 +1,18 @@
+//REMOVER O CARACTERE "()"
+//REMOVER OS ESPAÇOS ENTRE OS NÚMEROS
+
+function clear(num) {
+    //REPLACE remove todo espaço em branco
+    var remove = num.replace(/\s/g, '')
+
+    //REMOVE TODOS OS CARACTERES ESPECIAIS
+    remove = remove.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');
+
+    console.log(remove);
+    
+}
+
+
 function submit(){
     var number = document.getElementById('input').value
     var counter = number.slice(0,2)
@@ -31,3 +46,5 @@ function submit(){
         document.getElementById('msg_send').style.display = "none";
     }
 }
+
+
