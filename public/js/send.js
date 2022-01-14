@@ -1,5 +1,24 @@
-const num = document.getElementById('input').value
-const str = toString(num, 8)
-const rep = str.replace(/[\u0300-\u036f]/g, "")
+function submit() {
+  return new Send().numero;
+}
 
-console.log(rep);
+class Send {
+  constructor() {
+    this.numero = document.getElementById('input').value;
+  }
+
+  Validar() {
+    if (this.numero.length > 11) {
+      const msg = 'O número iformado tem mais de 11 digitos.';
+      this.erro(msg);
+    }
+  }
+
+  sucesso() {
+
+  }
+
+  erro(msg) {
+
+  }
+}
