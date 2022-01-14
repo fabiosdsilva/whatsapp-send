@@ -9,8 +9,7 @@ class Send {
 
   Validar() {
     if (this.numero.length > 11) {
-      const msg = 'O número iformado tem mais de 11 digitos.';
-      this.erro(msg);
+      throw this.erro();
     }
   }
 
