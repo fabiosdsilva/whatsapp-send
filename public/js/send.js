@@ -8,7 +8,7 @@ class Send {
   }
 
   Validar() {
-    if (this.numero.length === 9) {
+    if (this.numero.length === 11) {
       return this.sucesso(), this.Enviar();
     }
     return this.erro();
@@ -20,7 +20,7 @@ class Send {
   }
 
   sucesso() {
-    return document.getElementById('alert_sucess').style.display = '', document.getElementById('alert_sucess').innerHTML = "Tudo certo :)";
+    return document.getElementById('alert_sucess').style.display = '', document.getElementById('alert_sucess').innerHTML = "Tudo certo :)", this.numero.value = "";
   }
 
   erro() {
