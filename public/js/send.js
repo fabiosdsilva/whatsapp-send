@@ -1,7 +1,6 @@
 function submit() {
-  return new Send().numero;
+  return new Send();
 }
-
 class Send {
   constructor() {
     this.numero = document.getElementById('input').value;
@@ -9,14 +8,15 @@ class Send {
   }
 
   Validar() {
-    if (this.numero.length === 11) {
-      return this.sucesso();
+    if (this.numero.length === 9) {
+      return this.sucesso(), this.Enviar();
     }
     return this.erro();
   }
 
   Enviar() {
-    console.log('faibo');
+    const link = `https://api.whatsapp.com/send/?phone=${this.numero}`;
+    return document.getElementById('WppApiLink').setAttribute("href", link);
   }
 
   sucesso() {

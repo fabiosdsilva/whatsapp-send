@@ -17,5 +17,9 @@ module.exports = {
     'quotes': 'off',
     'no-param-reassign': 'off',
     'no-console': 'off',
+    'no-undef': 'off',
+    'no-return-assign': 'off',
+    'no-unused-vars': 'off',
+    'no-use-before-define': 'offe',
   },
 };
