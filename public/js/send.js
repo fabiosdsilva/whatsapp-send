@@ -8,7 +8,7 @@ class Send {
   }
 
   Validar() {
-    if (this.numero.length === 11) {
+    if (this.numero.length === 13) {
       return this.sucesso(), this.Enviar();
     }
     return this.erro();
