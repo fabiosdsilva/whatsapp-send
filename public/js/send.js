@@ -20,7 +20,7 @@ class Send {
   }
 
   sucesso() {
-    return document.getElementById('alert_sucess').style.display = '', document.getElementById('alert_sucess').innerHTML = "Tudo certo :)", this.numero.value = "";
+    return document.getElementById('alert_sucess').style.display = '', document.getElementById('alert_sucess').innerHTML = "Tudo certo :)";
   }
 
   erro() {
