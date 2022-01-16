@@ -11,7 +11,9 @@ class Send {
     if (this.numero.length === 13) {
       return this.sucesso(), this.Enviar();
     }
-    return this.erro();
+    setTimeout(() => {
+      return this.erro();
+    },1000)
   }
 
   Enviar() {
