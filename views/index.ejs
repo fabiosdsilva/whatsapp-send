@@ -12,29 +12,26 @@
             </div>
             <div class="info">
               <div class="text-center">
-                <h4 class="text-dark mb-5 mt-5 fs-5">Pro favor digite um número de telefone e clique em Iniciar conversa</h4>
-                <p></p>
+                <h4 class="text-dark mb-5 mt-5 fs-5">Pro favor digite um número de telefone e clique em Iniciar conversa</h4> 
               </div>
             </div>
             <hr>
 
             <!-- SELECIONAR PAIS -->
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <select class="form-select" aria-label="Default select example">
+            <div class="input-group mb-3">
+              <select id="select">
                 <option selected>Brasil (+55)</option>
                 <option value="1">USA (+1)</option>
               </select>
-            </div>
-           
-
-            <!-- ENTRAR COM O NÚMERO -->
-            <div class="submit">
-              <div class="d-grid gap-2 col-8 mx-auto">
-                <input class="form-control mt-2" type="number" placeholder="Ex. DDD x xxxx-xxxx" aria-label="default input example">
-                <button class="btn btn-success mt-2" type="button">Iniciar conversa</button>
+              <div>
               </div>
+              <input id="input" type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Ex. DDD x xxxx-xxxx">
             </div>
 
+            <!-- BOTÃO INICIAR CONVERSA  -->
+            <div class="button">
+              <button class="btn btn-success"> Iniciar conversa</button>
+            </div>
           </div>
         </div>
             
