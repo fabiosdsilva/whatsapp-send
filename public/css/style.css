@@ -1,3 +1,12 @@
-a{
-    color: inherit;
+.auto {
+  margin: auto;
+  margin-top: 15vh;
+
+  text-align: center;
+  /* color: white; */
+  
+}
+
+.auto #info {
+  margin-top: 5vh;
 }
