@@ -12,15 +12,15 @@
             </div>
             <div class="info">
               <div class="text-center">
-                <h4 class="text-dark mb-5 mt-5 fs-5">Pro favor digite um número de telefone e clique em Iniciar conversa</h4> 
+                <h4 class="text-dark mb-2 mt-5 fs-5">Pro favor digite um número de telefone e clique em Iniciar conversa</h4> 
               </div>
             </div>
-            <hr>
+            <hr class="mb-4">
 
             <!-- SELECIONAR PAIS -->
             <div class="input-group mb-3">
               <select id="select">
-                <option selected>Brasil (+55)</option>
+                <option value="55" selected>Brasil (+55)</option>
                 <option value="1">USA (+1)</option>
               </select>
               <div>
@@ -30,7 +30,7 @@
 
             <!-- BOTÃO INICIAR CONVERSA  -->
             <div class="button">
-              <button class="btn btn-success"> Iniciar conversa</button>
+              <a class="btn btn-success" onclick="submit()" href="" id="WppApiLink">Iniciar conversa</a>
             </div>
           </div>
         </div>

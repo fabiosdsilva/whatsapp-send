@@ -8,22 +8,29 @@ class Send {
   }
 
   Validar() {
-    if (this.numero.length === 13) {
-      return this.sucesso(), this.Enviar();
+    if (this.numero.length === 11 ) {
+      return this.Enviar();
     }
-    setTimeout(() => {this.erro();}, 1000)
+    
   }
 
   Enviar() {
-    const link = `https://api.whatsapp.com/send/?phone=${this.numero}`;
-    return document.getElementById('WppApiLink').setAttribute("href", link);
+    const select = document.getElementById('select');
+    const options = select.options[select.selectedIndex].value
+
+    const numFull = options+this.numero;
+    
+    const link = `https://api.whatsapp.com/send/?phone=${numFull}`;
+    console.log(link)
+
+    return document.getElementById('WppApiLink').setAttribute('href', link);
   }
 
-  sucesso() {
-    return document.getElementById('alert_sucess').style.display = '', document.getElementById('alert_sucess').innerHTML = "Tudo certo :)";
-  }
+  // sucesso() {
+  //   return document.getElementById('alert_sucess').style.display = '', document.getElementById('alert_sucess').innerHTML = "Tudo certo :)";
+  // }
 
-  erro() {
-    return document.getElementById('alert_danger').style.display = '', document.getElementById('alert_danger').innerHTML = "O número passado deve ter 11 digitos";
-  }
+  // erro() {
+  //   return document.getElementById('alert_danger').style.display = '', document.getElementById('alert_danger').innerHTML = "O número passado deve ter 11 digitos";
+  // }
 }
