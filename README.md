@@ -1,2 +1,5 @@
 # whatsapp-send
-É só pôr um número de celular válido, clicar em enviar e começar a conversar pelo Whatsapp! Facilita muito a vida de quem trabalha com suporte técnico e tem que ficar salvando números de telefone na lista de contato pessoal. 
+Acessem https://wppsend.herokuapp.com/ 
+
+É só pôr um número de celular válido (dd+9...) e clicar em Iniciar conversa! O app vai te levar direito para conversar com próprietario do número passao! 
+Não precisa encher sua agenda de contatinhos :)
