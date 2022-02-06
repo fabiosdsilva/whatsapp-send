@@ -11,7 +11,6 @@ class Send {
     if (this.numero.length === 11 ) {
       return this.Enviar();
     }
-    
   }
 
   Enviar() {
