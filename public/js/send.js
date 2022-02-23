@@ -8,9 +8,19 @@ class Send {
   }
 
   Validar() {
-    if (this.numero.length === 11 ) {
-      return this.Enviar();
-    }
+    const exception = [' ', '-', '(', ')', '.', '+', '_', '*', '#', '@'];
+    let num = '';
+
+    for (let i of this.numero) {
+      if (!exception.includes(i)) {
+        num += i;
+      };
+    };
+
+    if (num.length == 11) {
+      this.numero = num;
+      return this.numero, this.Enviar();
+    };
   }
 
   Enviar() {
