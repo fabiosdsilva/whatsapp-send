@@ -1,9 +1,9 @@
-import dotenv from 'dotenv';
-
-dotenv.config();
+require('dotenv').config();
 
 import express from 'express';
-import routes from './controller/home';
+import path from 'path';
+
+import routes from './src/controller/home';
 
 class App {
   constructor() {
@@ -13,7 +13,7 @@ class App {
   }
 
   middleware() {
-    this.app.use(express.static('public'));
+    this.app.use(express.static(path.join(__dirname, 'front', 'public')));
     this.app.use(express.urlencoded({ extended: true }));
     this.app.set('view engine', 'ejs');
   }
