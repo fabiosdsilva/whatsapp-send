@@ -5,4 +5,4 @@ Esse projeto foi desenvolvido pensando na praticidade de mandar mensagem pelo Wh
 ### Hospedagem
 O projeto está hospedado nos servidores da Heroku e pode ser acessado pela url: https://wppsend.herokuapp.com
 ### Importante
-Lembre-se que o número digitado deverá seguir uma ordem -> ddd+9+números. Caso contrário, a aplicação não conseguirá executar corretamene seu papel.
+Lembre-se que o número digitado deverá seguir uma ordem: ddd +9 +números.
